@@ -13,6 +13,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+/**
+ * Class {@code ParametersInvoker} is the class for Invoking methods
+ * which are annotated by any {@code Annotation} and gaining results
+ * of these invocations
+ * @see java.lang.annotation.Annotation
+ * @author Devepre
+ *
+ */
 public class ParametersInvoker {
 	private Object instance;
 	private Class<?> inputClass;
@@ -22,6 +30,10 @@ public class ParametersInvoker {
 		super();
 	}
 
+	/**
+	 * @param instance		instance of {@code Object} which special annotated methods should invoke 
+	 * @param annotation	describes {@code Class<? extends Annotation>} marked methods by will invoke    
+	 */
 	public ParametersInvoker(Object instance, Class<? extends Annotation> annotation) {
 		super();
 		this.instance = instance;
@@ -29,6 +41,9 @@ public class ParametersInvoker {
 		this.annotation = annotation;
 	}
 
+	/**
+	 * @return	{@code List<Object>} of invoking annotated method results
+	 */
 	public List<Object> getResults() {
 		List<Method> annotatedMethods = getAnnotatedMethods(this.inputClass, this.annotation);
 		if (annotatedMethods.size() == 0) {
