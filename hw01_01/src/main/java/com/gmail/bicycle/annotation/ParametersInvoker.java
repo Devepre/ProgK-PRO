@@ -101,7 +101,7 @@ public class ParametersInvoker {
 						}
 					}
 				} catch (ClassNotFoundException | IllegalArgumentException | IllegalAccessException e) {
-					e.printStackTrace();
+					throw new IllegalArgumentException("can't invoke method " + e.getMessage());
 				}
 			}
 		}
