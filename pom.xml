@@ -11,6 +11,7 @@
 	<modules>
 		<module>hw01_01</module>
 		<module>hw01_02</module>
+		<module>hw01_03</module>
 	</modules>
 
 	<build>
