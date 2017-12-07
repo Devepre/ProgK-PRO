@@ -16,8 +16,11 @@ public class SaverWrapper {
 	}
 
 	public void run(TextContainer textContainer) {
-		Saver saver = new Saver();
-		invokeSaves(saver, getMethods(saver), textContainer);
+		new Thread(() -> {
+			Saver saver = new Saver();
+			invokeSaves(saver, getMethods(saver), textContainer);
+		}).start();
+
 	}
 
 	protected void invokeSaves(Object obj, List<Method> methods, TextContainer textContainer) {
