@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<trains>
+    <train id="1">
+        <date>19.12.2013</date>
+        <departure>15:05</departure>
+        <from>Kyiv</from>
+        <to>Donetsk</to>
+    </train>
+    <train id="2">
+        <date>19.12.2013</date>
+        <departure>19:05</departure>
+        <from>Lviv</from>
+        <to>Donetsk</to>
+    </train>
+</trains>
