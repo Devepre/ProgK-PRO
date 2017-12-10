@@ -13,6 +13,7 @@
 		<module>hw01_02</module>
 		<module>hw01_03</module>
 		<module>hw02_01</module>
+		<module>hw02_02</module>
 	</modules>
 
 	<build>
