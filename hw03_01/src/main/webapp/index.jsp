@@ -15,9 +15,9 @@
 		<br/><input type="radio" name="question1" value="2" />No
 		
 		<br/>What is SOLID?
-		<br><input type="radio" name="question2" value="1" />Firm and stable in shape
-		<br><input type="radio" name="question2" value="2" />Not liquid or fluid
-		<br/><input type="radio" name="question2" value="3" />Principles of Object Oriented Design
+		<br><input type="radio" name="question2" value="3" />Firm and stable in shape
+		<br><input type="radio" name="question2" value="4" />Not liquid or fluid
+		<br/><input type="radio" name="question2" value="5" />Principles of Object Oriented Design
 		
 		<br><input type="submit" />		
 	</form>
